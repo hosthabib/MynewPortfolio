@@ -7,7 +7,7 @@ function About() {
     <section id="about" className="about-section">
       <div className="about-container">
         <div className="about-image">
-          <img src="../../image/Snapchat-689972936.jpg" alt="Profile" className="profile-image"/>
+          <img src="../../image/1000027695-removebg-preview.jpg" alt="Profile" className="profile-image"/>
         </div>
         <div className="about-content">
           <h2>About Me</h2>
