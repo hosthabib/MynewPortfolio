@@ -1,9 +1,9 @@
-/* src/styles/About.css */
 .about-section {
   padding: 60px 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column; /* Column layout for smaller screens */
 }
 
 .about-container {
@@ -14,6 +14,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: transform 0.4s ease;
+  flex-direction: row; /* Row layout for desktop */
 }
 
 .about-container:hover {
@@ -23,6 +24,7 @@
 .about-image {
   flex: 1;
   padding: 20px;
+  text-align: center; /* Center the image on small screens */
 }
 
 .about-image img {
@@ -66,4 +68,44 @@
 
 .about-content .btn:hover {
   background-color: #ff5722;
+}
+
+/* Media Queries for Mobile Optimization */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column; /* Stack content vertically on tablets and smaller */
+  }
+
+  .about-content {
+    padding: 20px;
+    text-align: center; /* Center the text for smaller screens */
+  }
+
+  .about-content h2 {
+    font-size: 28px;
+  }
+
+  .about-content p {
+    font-size: 16px;
+  }
+
+  .about-image img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content h2 {
+    font-size: 24px;
+  }
+
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .about-image img {
+    width: 120px;
+    height: 120px;
+  }
 }
