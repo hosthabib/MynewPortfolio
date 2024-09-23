@@ -16,9 +16,10 @@ function Projects() {
             target="_blank" >
           <div className="project-card" key={index}>
             <h3>{project.title}</h3>
+              </a>
             <p>{project.description}</p>
           </div>
-          </a>
+          
         ))}
       </div>
     </section>
