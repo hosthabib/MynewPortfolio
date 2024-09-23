@@ -11,11 +11,13 @@ function Projects() {
       <h2>Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (
-          <a
-            href={project.link} 
-            target="_blank" >
+          
           <div className="project-card" key={index}>
-            <h3>{project.title}</h3>
+            <a
+            href={project.link} 
+            target="_blank"
+              >
+              <h3>{project.title}</h3>
               </a>
             <p>{project.description}</p>
           </div>
