@@ -3,7 +3,7 @@ import React from 'react';
 function Projects() {
   const projects = [
     { title: "Banking App", description: "A simple banking portal with transfer and payment features.", link: "https://build-a-banking-portal-with-node-and-express.vercel.app/" },
-    { title: "Portfolio Site", description: "Personal portfolio showcasing skills and projects." ,link: "https://globomantics-flame.vercel.app/"},
+    { title: "Globomantics(Node and Express project)", description: "Personal portfolio showcasing skills and projects." ,link: "https://globomantics-flame.vercel.app/"},
   ];
 
   return (
